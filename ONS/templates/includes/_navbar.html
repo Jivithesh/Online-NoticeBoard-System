@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#163c9f;">
+  <a class="navbar-brand" href="#">Online Notice Board</a>
+  
+<ul class="nav navbar-nav navbar-right">
+  <li><a class="navbar-brand" href="/login">Login</a></li>
+      {% if session.logged_in %}
+                        <li><a href="/flash">Flash News </a></li>
+
+                        <li><a href="/logout">Logout</a></li>
+                        {% else %}
+      {% endif %}
+</ul>
+</nav>
